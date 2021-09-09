@@ -15,3 +15,5 @@ comments are added for better understanding.
 Dependies:
 Tensorflow 2.0 or later
 ```
+
+Licence under the [MIT License](LICENSE)
