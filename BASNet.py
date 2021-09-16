@@ -228,6 +228,9 @@ def BASNet_RRM(base_model, planes, num_classes):
 
     # segmentation head
     d_stage_1 = segmentation_head(d_stage_1, num_classes, None)  # 1
+    
+    # add prediction + refinement output
+    d_stage_1 = x_in + d_stage_1
 
     model = models.Model(inputs=[base_model_input], outputs=[d_stage_1])
 
